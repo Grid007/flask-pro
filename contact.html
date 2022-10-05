@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- start bootstrap navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand">&nbsp;Aniketh</a>
+            <div class="navbar-nav">
+                <form  action="/" method="POST">
+                    <input type="submit" value="Home" name="btn" class="btn btn-outline-danger" href="index.html">
+                    <input type="submit" value="Skills" name="btn" class="btn btn-outline-danger" href="skills.html">
+                    <input type="submit" value="Database" name="btn" class="btn btn-outline-danger" href="database.html">
+                    <input type="submit" value="Contact" name="btn" class="btn btn-outline-danger active" href="contact.html">
+                </form>
+            </div>
+        </div>
+        
+    </nav>
+    <!-- end bootstrap navigation -->
+
+
+    <!-- start content section  -->
+    <div class="container">
+        <br>
+        <h4 >Contact Me</h4>
+        <br>
+        
+        <div class="row">
+            <div class="col-5">
+                <h4 style="margin-top: 100px;">
+                    Buy me a cup of coffee!
+                </h4>
+            
+                <p>
+                Email : bond007@gmail.com
+                </p>
+                <p>Mobile : +91 698439863</p>
+                <p>
+                Address: JP Nagar, 2nd Phase <br>
+                Bangalore-560095
+                </p>
+            </div>
+             <div class="col-7">
+                <h4>
+                     Please fill the details {{data}}
+                </h4>
+                    <form method="POST" action="/">
+                        <p>
+                            <label >Your Name</label>
+                            <input type="text" class="form-control" name="contact-name">
+                        <p>
+                            <label >Email</label>
+                            <input type="text" class="form-control" name="contact-email">
+                        </p>
+                        <p>
+                            <label >Mobile No.</label>
+                            <input type="text" class="form-control" name="contact-mobile">
+                        </p>
+                        <p>
+                            <label >Comments</label>
+                            <input type="text" class="form-control" name="contact-comments">
+                        </p>
+                        <button  name='btn' value="cb" class="btn btn-danger">Submit</button>
+                        </p>
+                    </form>
+                
+            </div>           
+        </div>      
+    </div>
+    <!-- end content section  -->
+</body>
+</html>
